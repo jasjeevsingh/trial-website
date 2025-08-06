@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           {/* Logo and tagline */}
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-bold gradient-text trial-brand mb-2">TRIAL</h3>
+            <h3 className="text-2xl gradient-text trial-brand mb-2">TRIAL</h3>
             <p className="text-gray-400 text-sm"><span className="trial-brand">Enter the arena. Survive the trial.</span></p>
           </div>
 

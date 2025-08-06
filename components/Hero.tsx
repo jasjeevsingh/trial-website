@@ -22,10 +22,10 @@ export default function Hero({ onCreatorClick, onViewerClick, onAboutClick }: He
             <span className="text-4xl font-black text-black">T</span>
           </div> */}
             <Image
-                src="/Users/jasjeev/Documents/GitHub/trial-website/TRIAL_logo.jpg"
+                src="/TRIAL_logo_cropped.jpg"
                 alt="Trial Logo"
-                width={128}
-                height={128}
+                width={192}
+                height={192}
                 className="mx-auto mb-6 rounded-full shadow-2xl"
             />
           <h1 className="text-6xl md:text-8xl tracking-tight mb-4">
@@ -57,39 +57,42 @@ export default function Hero({ onCreatorClick, onViewerClick, onAboutClick }: He
             className="btn-primary w-full sm:w-auto text-lg px-12 py-5 group"
           >
             <span className="flex items-center justify-center gap-3">
-              <span className="trial-brand">I want to enter the Trial</span>
-              <span className="transform group-hover:translate-x-1 transition-transform">⚔️</span>
+              <span className="trial-brand">Enter the Trial</span>
+              <span className="transform group-hover:translate-x-1 transition-transform"></span>
             </span>
           </button>
           
-          {/* Simple scale animation between buttons */}
-          {/* Improved tipping scale animation */}
+          {/*
+          Simple scale animation between buttons
+           Improved tipping scale animation 
+          
           <div className="hidden sm:flex items-center justify-center">
             <div className="flex flex-col items-center relative">
-              {/* Pivot (stand) */}
+               Pivot (stand) 
               <div className="w-1 h-6 bg-gray-600 rounded-full z-10"></div>
 
-              {/* Beam + pans as one rotating unit */}
+               Beam + pans as one rotating unit 
               <div className="relative w-32 h-1 mt-1 animate-tip origin-center">
-              {/* Beam */}
+               Beam 
               <div className="absolute inset-0 bg-gray-400 rounded-full h-full"></div>
 
-              {/* Left Pan */}
+               Left Pan 
               <div className="absolute -left-5 top-2 w-4 h-0.5 bg-gray-500 rounded-full"></div>
 
-              {/* Right Pan */}
+               Right Pan 
               <div className="absolute -right-5 top-2 w-4 h-0.5 bg-gray-500 rounded-full"></div>
               </div>
             </div>
           </div>
+        */}
           
           <button
             onClick={onViewerClick}
             className="btn-secondary w-full sm:w-auto text-lg px-12 py-5 group"
           >
             <span className="flex items-center justify-center gap-3">
-              <span className="trial-brand">I want to judge the Trial</span>
-              <span className="transform group-hover:scale-110 transition-transform">⚖️</span>
+              <span className="trial-brand">Judge the Trial</span>
+              <span className="transform group-hover:scale-110 transition-transform"></span>
             </span>
           </button>
         </div>
