@@ -98,24 +98,7 @@ export default function Hero({ onCreatorClick, onViewerClick, onAboutClick }: He
           </button>
         </div>
 
-        {/* Bottom scale animation for mobile */}
-        <div className="sm:hidden absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <div className="flex flex-col items-center">
-            {/* Scale base */}
-            <div className="w-1 h-6 bg-gray-600 rounded-full"></div>
-            
-            {/* Scale beam with tipping animation */}
-            <div className="w-12 h-0.5 bg-gray-400 rounded-full animate-[tip_3s_ease-in-out_infinite] origin-center"></div>
-            
-            {/* Left scale pan */}
-            <div className="absolute w-3 h-0.5 bg-gray-500 rounded-full -translate-x-4 translate-y-1 animate-[leftPan_3s_ease-in-out_infinite]"></div>
-            
-            {/* Right scale pan */}
-            <div className="absolute w-3 h-0.5 bg-gray-500 rounded-full translate-x-4 translate-y-1 animate-[rightPan_3s_ease-in-out_infinite]"></div>
-            
-            <div className="mt-2 text-xs text-gray-500">Choose your path</div>
-          </div>
-        </div>
+
       </div>
     </section>
   )

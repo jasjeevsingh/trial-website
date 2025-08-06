@@ -3,6 +3,8 @@ import { createClient } from '@supabase/supabase-js'
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 
+
+
 export const supabase = createClient(supabaseUrl, supabaseAnonKey)
 
 export type WaitlistType = 'creator' | 'viewer'
@@ -31,6 +33,10 @@ export async function addToWaitlist(email: string, type: WaitlistType): Promise<
     }
 
     // Insert into waitlist table (let Supabase handle created_at)
+
+    console.log('SUPABASE_URL:', process.env.NEXT_PUBLIC_SUPABASE_URL);
+    console.log('SUPABASE_ANON_KEY:', process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
+    
     const { data, error } = await supabase
       .from('waitlist')
       .insert([
@@ -39,7 +45,6 @@ export async function addToWaitlist(email: string, type: WaitlistType): Promise<
           type
         }
       ])
-      .select()
 
     if (error) {
       // Handle duplicate email error

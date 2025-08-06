@@ -123,10 +123,13 @@ export default function Modal({ isOpen, onClose, type }: ModalProps) {
         ) : (
           /* Success state */
           <div className="text-center py-8">
-            <div className="text-6xl mb-6">🎉</div>
-            <h2 className="text-2xl font-bold text-white mb-4"><span className="trial-brand">Welcome to the Trial!</span></h2>
+            <div className="text-6xl mb-6"></div>
+            <div className="flex items-center justify-center">
+              <h2 className="text-2xl font-bold text-white mb-4 mr-2"><span className="trial-brand">Welcome to</span></h2>
+              <h2 className="text-2xl font-bold text-red mb-4"><span className="gradient-text trial-brand">TRIAL.</span></h2>
+            </div>
             <p className="text-gray-400 mb-6">
-              You&apos;ve been added to the waitlist. We&apos;ll notify you when the arena opens.
+              You&apos;ve been added to the waitlist. We&apos;ll notify you when it begins.
             </p>
             <button
               onClick={handleClose}
