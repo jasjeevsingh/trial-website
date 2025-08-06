@@ -34,10 +34,11 @@ export default function Hero({ onCreatorClick, onViewerClick, onAboutClick }: He
         </div>
 
         {/* Tagline */}
-        <h2 className="text-2xl md:text-4xl font-light text-gray-300 mb-12 tracking-wide">
-          Enter the arena. 
-          <span className="text-trial-red font-semibold inline-flex items-center gap-2">
-             <span className="trial-brand">Survive the Trial.</span>
+        <h2 className="text-2xl md:text-4xl font-light text-trial-white mb-12 tracking-wide">
+          Every video’s a risk. 
+          {" "}
+          <span className="text-trial-red font-light inline-flex items-center gap-2">
+            Only the unforgettable survive.{" "}
             <button
               onClick={onAboutClick}
               className="text-gray-400 hover:text-trial-gold transition-colors duration-300 transform hover:scale-110"
@@ -57,7 +58,7 @@ export default function Hero({ onCreatorClick, onViewerClick, onAboutClick }: He
             className="btn-primary w-full sm:w-auto text-lg px-12 py-5 group"
           >
             <span className="flex items-center justify-center gap-3">
-              <span className="trial-brand">Enter the Trial</span>
+              <span className="trial-brand font-semibold">ENTER the TRIAL</span>
               <span className="transform group-hover:translate-x-1 transition-transform"></span>
             </span>
           </button>
@@ -91,7 +92,7 @@ export default function Hero({ onCreatorClick, onViewerClick, onAboutClick }: He
             className="btn-secondary w-full sm:w-auto text-lg px-12 py-5 group"
           >
             <span className="flex items-center justify-center gap-3">
-              <span className="trial-brand">Judge the Trial</span>
+              <span className="trial-brand font-semibold">JUDGE the TRIAL</span>
               <span className="transform group-hover:scale-110 transition-transform"></span>
             </span>
           </button>

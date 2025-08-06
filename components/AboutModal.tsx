@@ -32,39 +32,48 @@ export default function AboutModal({ isOpen, onClose }: AboutModalProps) {
         <div className="p-8">
           <div className="bg-gray-800/50 border border-gray-700 rounded-2xl p-8 md:p-12 backdrop-blur-sm">
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-12">
-              <span className="text-trial-red font-semibold trial-brand">Trial</span> is a platform where videos compete for permanence. 
-              <span className="text-trial-gold font-semibold"> Viewers are the jury.</span> 
-              <span className="text-white font-semibold"> Creators are the gladiators.</span> 
-              Every upload is a test. The audience decides what lives or dies.
+              <span className="text-trial-red font-semibold trial-brand">TRIAL</span> is a social network where videos have to 
+              <span className="text-trial-gold font-semibold"> earn permanence. </span> 
+              {/* <span className="text-white font-semibold"> Creators are the gladiators.</span>  */}
+              Viewers decide what content 
+              <span className="text-trial-gold font-semibold"> lives or dies.</span>
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="text-center group">
-                <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">⚔️</div>
+                <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300"></div>
                 <h3 className="text-2xl font-semibold text-white mb-4">Creators</h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Upload videos and face the trial. Only content that engages the audience survives. 
-                  Every upload is a battle for permanence in the digital arena.
+                  Create videos and face the 
+                  <span className="text-trial-red font-semibold trial-brand"> TRIAL</span>. 
+                  Only content that reaches a level of audience engagement survives. 
+                  Every upload is a 
+                  <span className="text-white font-semibold"> battle  </span>
+                  for permanence in the digital arena.
                 </p>
               </div>
               
               <div className="text-center group">
-                <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">⚖️</div>
-                <h3 className="text-2xl font-semibold text-white mb-4">Judges</h3>
+                <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300"></div>
+                <h3 className="text-2xl font-semibold text-white mb-4">Viewers</h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Watch, vote, and decide what deserves immortality. Your engagement determines 
-                  which videos live forever and which fade into oblivion.
+                  Watch, like, share, or comment. Your actions 
+                  <span className="text-trial-red font-semibold trial-brand"> ALONE </span> 
+                  determine which videos reach
+                  <span className="text-white font-semibold"> internet immortality </span>
+                   and which are sent into 
+                   <span className="text-white font-semibold"> oblivion.</span>
                 </p>
               </div>
               
-              <div className="text-center group">
+              {/* <div className="text-center group">
                 <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">👑</div>
                 <h3 className="text-2xl font-semibold text-white mb-4">Champions</h3>
                 <p className="text-gray-400 leading-relaxed">
                   Videos that survive become permanent legends. They earn their place in 
                   internet history through the collective will of the audience.
                 </p>
-              </div>
+              </div> */}
             </div>
 
             {/* Additional info section */}
@@ -75,7 +84,7 @@ export default function AboutModal({ isOpen, onClose }: AboutModalProps) {
                   <span className="text-trial-red text-2xl">1.</span>
                   <div>
                     <h5 className="font-semibold text-white mb-1">Upload & Enter</h5>
-                    <p className="text-sm">Creators upload their videos to enter the trial arena.</p>
+                    <p className="text-sm">Creators upload their videos to the platform.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -89,14 +98,14 @@ export default function AboutModal({ isOpen, onClose }: AboutModalProps) {
                   <span className="text-trial-gold text-2xl">3.</span>
                   <div>
                     <h5 className="font-semibold text-white mb-1">Audience Judges</h5>
-                    <p className="text-sm">Viewers decide through likes, shares, and engagement.</p>
+                    <p className="text-sm">Viewers decide through likes, shares, and comments.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-trial-gold text-2xl">4.</span>
                   <div>
                     <h5 className="font-semibold text-white mb-1">Verdict</h5>
-                    <p className="text-sm">Videos either achieve immortality or disappear forever.</p>
+                    <p className="text-sm">Videos either stay on the platform or vanish.</p>
                   </div>
                 </div>
               </div>

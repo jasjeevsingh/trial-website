@@ -16,10 +16,10 @@ export default function Modal({ isOpen, onClose, type }: ModalProps) {
   const [error, setError] = useState('')
 
   const isCreator = type === 'creator'
-  const title = isCreator ? <span className="trial-brand">Enter the Trial</span> : <span className="trial-brand">Judge the Trial</span>
+  const title = isCreator ? <span className="trial-brand">CREATOR</span> : <span className="trial-brand">USER</span>
   const subtitle = isCreator 
-    ? 'Join the waitlist to become a gladiator in the arena'
-    : 'Join the waitlist to become a judge and decide what survives'
+    ? 'Will you create content that will survive the Trial?'
+    : 'Will you decide what survives in the Trial?'
 
   const validateEmail = (email: string) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
@@ -83,7 +83,7 @@ export default function Modal({ isOpen, onClose, type }: ModalProps) {
           <>
             {/* Header */}
             <div className="text-center mb-8">
-              <div className="text-4xl mb-4">{isCreator ? '⚔️' : '⚖️'}</div>
+              {/* <div className="text-4xl mb-4">{isCreator ? '⚔️' : '⚖️'}</div> */}
               <h2 className="text-2xl font-bold text-white mb-2">{title}</h2>
               <p className="text-gray-400">{subtitle}</p>
             </div>
@@ -116,7 +116,7 @@ export default function Modal({ isOpen, onClose, type }: ModalProps) {
                 disabled={isSubmitting}
                 className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
               >
-                {isSubmitting ? 'Joining...' : `Join the ${isCreator ? 'Arena' : 'Jury'}`}
+                {isSubmitting ? 'Joining...' : `Join the ${isCreator ? 'Creator' : 'User'} Waitlist`}
               </button>
             </form>
           </>

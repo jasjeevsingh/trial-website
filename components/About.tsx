@@ -8,7 +8,7 @@ export default function About() {
         
         <div className="bg-gray-800/50 border border-gray-700 rounded-2xl p-8 md:p-12 backdrop-blur-sm">
           <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-            <span className="text-trial-red font-semibold">Trial</span> is a platform where videos compete for permanence. 
+            <span className="text-trial-red font-semibold">TRIAL</span> is a platform where videos compete for permanence. 
             <span className="text-trial-gold font-semibold"> Viewers are the jury.</span> 
             <span className="text-white font-semibold"> Creators are the gladiators.</span> 
             Every upload is a test. The audience decides what lives or dies.

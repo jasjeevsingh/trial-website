@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Logo and tagline */}
           <div className="text-center md:text-left">
             <h3 className="text-2xl gradient-text trial-brand mb-2">TRIAL</h3>
-            <p className="text-gray-400 text-sm"><span className="trial-brand">Enter the arena. Survive the trial.</span></p>
+            <p className="text-gray-400 text-sm"><span className="trial-brand">Every video's a risk. Only the unforgettable survive.</span></p>
           </div>
 
           {/* Social links */}
@@ -53,7 +53,7 @@ export default function Footer() {
           {/* Copyright */}
           <div className="text-center md:text-right">
             <p className="text-gray-400 text-sm">
-              © {currentYear} <span className="trial-brand">Trial</span>. All rights reserved.
+              © {currentYear} <span className="trial-brand">TRIAL</span>. All rights reserved.
             </p>
             {/* <p className="text-gray-500 text-xs mt-1">
               Made with ⚔️ for gladiators

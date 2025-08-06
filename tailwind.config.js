@@ -14,7 +14,7 @@ module.exports = {
       },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
-        'trial': ['DM Serif Display', 'Inter', 'system-ui', 'sans-serif'],
+        'trial': ["DM Serif Display", 'Inter', 'system-ui', 'sans-serif'],
       },
       keyframes: {
         tip: {
