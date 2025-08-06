@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-trial-red hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-trial-gold text-trial-gold hover:bg-trial-gold hover:text-black font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-trial-red to-trial-gold bg-clip-text text-transparent;
+  }
+
+  .trial-brand {
+    @apply font-trial font-normal;
+    font-family: "DM Serif Display";
+    /* font-family: "DM Serif Display", 'Inter', system-ui, sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1; */
+  }
+}
+
+/* Custom animations for tipping scale */
+@keyframes tip {
+  0%, 100% { transform: rotate(0deg); }
+  33% { transform: rotate(-6deg); }
+  66% { transform: rotate(6deg); }
+}
+
+@keyframes leftPan {
+  0%, 100% { transform: translateY(0px) translateX(-16px); }
+  33% { transform: translateY(-2px) translateX(-16px); }
+  66% { transform: translateY(2px) translateX(-16px); }
+}
+
+@keyframes rightPan {
+  0%, 100% { transform: translateY(0px) translateX(16px); }
+  33% { transform: translateY(2px) translateX(16px); }
+  66% { transform: translateY(-2px) translateX(16px); }
+}
