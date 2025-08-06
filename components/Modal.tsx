@@ -126,7 +126,7 @@ export default function Modal({ isOpen, onClose, type }: ModalProps) {
             <div className="text-6xl mb-6">🎉</div>
             <h2 className="text-2xl font-bold text-white mb-4"><span className="trial-brand">Welcome to the Trial!</span></h2>
             <p className="text-gray-400 mb-6">
-              You've been added to the waitlist. We'll notify you when the arena opens.
+              You&apos;ve been added to the waitlist. We&apos;ll notify you when the arena opens.
             </p>
             <button
               onClick={handleClose}

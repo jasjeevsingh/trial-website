@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Logo and tagline */}
           <div className="text-center md:text-left">
             <h3 className="text-2xl gradient-text trial-brand mb-2">TRIAL</h3>
-            <p className="text-gray-400 text-sm"><span className="trial-brand">Every video's a risk. Only the unforgettable survive.</span></p>
+            <p className="text-gray-400 text-sm"><span className="trial-brand">Every video&apos;s a risk. Only the unforgettable survive.</span></p>
           </div>
 
           {/* Social links */}
