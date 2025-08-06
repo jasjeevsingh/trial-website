@@ -35,20 +35,31 @@ export default function Hero({ onCreatorClick, onViewerClick, onAboutClick }: He
 
         {/* Tagline */}
         <h2 className="text-2xl md:text-4xl font-light text-trial-white mb-12 tracking-wide">
-          Every video’s a risk. 
-          {" "}
-          <span className="text-trial-red font-light inline-flex items-center gap-2">
-            Only the unforgettable survive.{" "}
+        Every video’s a risk.{" "}
+        <span className="text-trial-red font-light">
+            <span className="inline-flex items-center gap-1 whitespace-nowrap">
+            Only the unforgettable survive.
             <button
-              onClick={onAboutClick}
-              className="text-gray-400 hover:text-trial-gold transition-colors duration-300 transform hover:scale-110"
-              aria-label="Learn more about Trial"
+                onClick={onAboutClick}
+                className="text-gray-400 hover:text-trial-gold transition-colors duration-300 transform hover:scale-110"
+                aria-label="Learn more about Trial"
             >
-              <svg className="w-6 h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+                <svg
+                className="w-5 h-5 md:w-6 md:h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                >
+                <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+                </svg>
             </button>
-          </span>
+            </span>
+        </span>
         </h2>
 
         {/* CTA Buttons */}
